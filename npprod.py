@@ -19,4 +19,4 @@ def np_prod(A, B):
 
 prod = np_prod(A, B)
 print(f"The product is {prod}")
-print("This is a test for github webhook with jenkins pipeline to perform CI/CD... TEST 100001...")
+print(f"INFO: This is a new build to deploy the feature for VERSION 1.2 software update...")
