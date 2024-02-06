@@ -25,7 +25,7 @@ pipeline {
                 script {
                     sh 'python3 -m venv venv'
                     sh '. venv/bin/activate'
-                    sh 'pip install numpy pytest'
+                    sh 'pip3 install numpy pytest'
                     sh 'pytest -v'
                 }
             }
