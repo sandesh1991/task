@@ -15,8 +15,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build("${env.DOCKER_IMAGE}").inside {
-                    }
+                    sh '/usr/local/bin/docker build -t npprod:latest .'
                 }
             }
         }
