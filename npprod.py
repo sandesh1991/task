@@ -18,4 +18,4 @@ def prod(A, B):
         return None
 
 prod = prod(A, B)
-print(f"The product mul is {prod}")
+print(f"The product is {prod}, This is a test for webhook")
