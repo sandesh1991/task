@@ -24,8 +24,8 @@ pipeline {
             steps {
                 script {
                     // Stop and remove previous container named npprod-container
-                    sh 'docker stop npprod-container || true'
-                    sh 'docker rm npprod-container || true'
+                    sh '/usr/local/bin/docker stop npprod-container || true'
+                    sh '/usr/local/bin/docker rm npprod-container || true'
                     // Build a new container
                     sh '/usr/local/bin/docker run --name npprod-container -d ${DOCKER_IMAGE}'
                 }
