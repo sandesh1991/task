@@ -19,4 +19,4 @@ def np_prod(A, B):
 
 prod = np_prod(A, B)
 print(f"The product is {prod}")
-print(f"INFO: This is a new build to deploy the feature for VERSION 1.2 software update...")
+print("This is a CI/CD test for new feature in version 1.2.......")
