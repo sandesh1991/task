@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy Docker Container') {
             steps {
                 script {
-                    docker.image("${env.DOCKER_IMAGE}").run()
+                    sh '/usr/local/bin/docker run --name npprod-container -d ${DOCKER_IMAGE}'
                 }
             }
         }
