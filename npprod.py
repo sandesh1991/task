@@ -8,7 +8,7 @@ A = [[6, 7],
 B = [[1, 3],
       [5, 7]]
 
-def prod(A, B):
+def np_prod(A, B):
     if VERSION == 1.1:
         return (np.matmul(A,B))
     elif VERSION == 1.2:
@@ -17,6 +17,6 @@ def prod(A, B):
         print(f"Please specify version")
         return None
 
-prod = prod(A, B)
+prod = np_prod(A, B)
 print(f"The product is {prod}")
 print("This is a test for github webhook with jenkins pipeline to perform CI/CD... TEST 100001...")

@@ -20,6 +20,17 @@ pipeline {
             }
         }
 
+        stage('Test Cases') {
+            steps {
+                script {
+                    sh 'python3 -m venv venv'
+                    sh '. venv/bin/activate'
+                    sh 'pip install numpy pytest'
+                    sh 'pytest -v'
+                }
+            }
+        }
+
         stage('Deploy Docker Container') {
             steps {
                 script {
