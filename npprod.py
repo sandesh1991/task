@@ -19,4 +19,4 @@ def np_prod(A, B):
 
 prod = np_prod(A, B)
 print(f"The product is {prod}")
-print("This is a CI/CD test for new feature in version 1.3.......")
+print("This is a CI/CD test for new feature in version 1.4.......")
